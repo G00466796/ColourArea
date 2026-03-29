@@ -1,12 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Layout 1 - ColourArea</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Corporate - ColourArea</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <h1>Layout 1: Business Corporate (Placeholder)</h1>
-    <a href="index.html">Back to Home</a>
+<body class="layout-page">
+
+  <aside class="sidebar-tools">
+    <div class="tools-header">
+      <a href="index.html" class="back-link">&larr; Back to Home</a>
+      <h2>Colour Tools</h2>
+    </div>
+    
+    <div class="tool-group">
+      <label for="colorPicker">Selected Element Color:</label>
+      <div class="picker-row">
+        <input type="color" id="colorPicker" value="#ffffff" disabled>
+        <span id="selectedElementName" class="selected-text">None selected</span>
+      </div>
+      <small class="instruction">Click any section on the right to select it.</small>
+    </div>
+
+    <div class="tool-actions">
+      <button id="resetColorsBtn" class="btn btn-outline" disabled>Reset Colors</button>
+      <button id="copyColorsBtn" class="btn btn-primary" disabled>Copy HEX</button>
+    </div>
+  </aside>
+
+  <main class="layout-canvas">
+    
+    <div class="mock-website">
+      
+      <nav class="mock-nav colourable" data-element-name="Navigation Bar">
+        <div class="mock-logo">CorpBrand</div>
+        <ul class="mock-links">
+          <li>Services</li>
+          <li>About Us</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+
+      <header class="mock-hero colourable" data-element-name="Hero Section">
+        <h1>Transform Your Business</h1>
+        <p>We provide enterprise-level solutions to scale your operations efficiently.</p>
+        <button class="mock-btn colourable" data-element-name="Hero Button">Get Started</button>
+      </header>
+
+      <section class="mock-services colourable" data-element-name="Services Background">
+        <div class="mock-card colourable" data-element-name="Service Card 1">
+          <h3>Consulting</h3>
+          <p>Expert advice to help you navigate modern markets.</p>
+        </div>
+        <div class="mock-card colourable" data-element-name="Service Card 2">
+          <h3>Analytics</h3>
+          <p>Data-driven decisions for maximum growth.</p>
+        </div>
+        <div class="mock-card colourable" data-element-name="Service Card 3">
+          <h3>Security</h3>
+          <p>Enterprise grade protection for your infrastructure.</p>
+        </div>
+      </section>
+
+      <footer class="mock-footer colourable" data-element-name="Footer">
+        <p>&copy; 2026 CorpBrand Solutions. All rights reserved.</p>
+      </footer>
+
+    </div>
+
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>

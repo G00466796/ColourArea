@@ -1,12 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Layout 2 - ColourArea</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creative Portfolio - ColourArea</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <h1>Layout 2: Creative Portfolio (Placeholder)</h1>
-    <a href="index.html">Back to Home</a>
+<body class="layout-page">
+
+  <aside class="sidebar-tools">
+    <div class="tools-header">
+      <a href="index.html" class="back-link">&larr; Back to Home</a>
+      <h2>Colour Tools</h2>
+    </div>
+    
+    <div class="tool-group">
+      <label for="colorPicker">Selected Element Color:</label>
+      <div class="picker-row">
+        <input type="color" id="colorPicker" value="#ffffff" disabled>
+        <span id="selectedElementName" class="selected-text">None selected</span>
+      </div>
+      <small class="instruction">Click any section on the right to select it.</small>
+    </div>
+
+    <div class="tool-actions">
+      <button id="resetColorsBtn" class="btn btn-outline" disabled>Reset Colors</button>
+      <button id="copyColorsBtn" class="btn btn-primary" disabled>Copy HEX</button>
+    </div>
+  </aside>
+
+  <main class="layout-canvas">
+    
+    <div class="mock-website portfolio-theme">
+      
+      <header class="mock-header colourable" data-element-name="Header Area">
+        <h1 class="mock-name">Hi, I'm Alex.</h1>
+        <p class="mock-role">A Digital Designer & Web Developer</p>
+      </header>
+
+      <section class="mock-portfolio-grid colourable" data-element-name="Portfolio Background">
+        <div class="mock-project colourable" data-element-name="Project 1">
+          <div class="mock-image"></div>
+          <h4>Project Alpha</h4>
+        </div>
+        <div class="mock-project colourable" data-element-name="Project 2">
+          <div class="mock-image"></div>
+          <h4>Project Beta</h4>
+        </div>
+        <div class="mock-project colourable" data-element-name="Project 3">
+          <div class="mock-image"></div>
+          <h4>Project Gamma</h4>
+        </div>
+        <div class="mock-project colourable" data-element-name="Project 4">
+          <div class="mock-image"></div>
+          <h4>Project Delta</h4>
+        </div>
+      </section>
+
+      <footer class="mock-contact colourable" data-element-name="Contact Section">
+        <h2>Let's work together!</h2>
+        <button class="mock-btn colourable" data-element-name="Contact Button">Say Hello</button>
+      </footer>
+
+    </div>
+
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
