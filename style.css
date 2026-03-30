@@ -290,6 +290,12 @@ input[type="color"] {
   cursor: pointer;
 }
 
+.colourable.selected-element {
+  outline: 3px solid var(--primary-color);
+  z-index: 5;
+  position: relative;
+}
+
 .mock-nav {
   display: flex;
   justify-content: space-between;
