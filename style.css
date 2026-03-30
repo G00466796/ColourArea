@@ -430,3 +430,132 @@ input[type="color"] {
   background-color: white;
   color: black;
 }
+
+/* --- Layout 3: E-Commerce Shop --- */
+.shop-theme {
+  background-color: #f8fafc;
+}
+.shop-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background-color: white;
+  border-bottom: 2px solid #e2e8f0;
+}
+.shop-logo { font-size: 1.5rem; font-weight: 700; color: #0f172a; }
+.shop-cart { font-weight: 600; padding: 10px 16px; background: #f1f5f9; border-radius: 6px; }
+.shop-promo {
+  background-color: #ef4444;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+.shop-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 60px 40px;
+  flex-grow: 1;
+}
+.shop-item {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 30%;
+}
+.shop-img {
+  background-color: #cbd5e1;
+  height: 200px;
+}
+.shop-info {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.shop-price { font-size: 1.25rem; font-weight: 700; }
+.shop-btn { padding: 10px; background-color: #0f172a; color: white; border: none; border-radius: 6px; cursor: pointer; }
+
+/* --- Layout 4: Modern Blog --- */
+.blog-theme {
+  background-color: white;
+}
+.blog-nav {
+  padding: 20px 40px;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: center;
+}
+.blog-title { font-size: 1.8rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; }
+.blog-featured {
+  padding: 40px;
+  background-color: #f9fafb;
+}
+.blog-img-large { height: 300px; background-color: #d1d5db; margin-bottom: 20px; border-radius: 8px; }
+.blog-headline { font-size: 2.5rem; margin-bottom: 10px; }
+.blog-layout {
+  display: flex;
+  padding: 0 40px 40px 40px;
+  gap: 40px;
+  flex-grow: 1;
+}
+.blog-feed { flex: 2; display: flex; flex-direction: column; gap: 30px; }
+.blog-post { padding: 20px; background-color: #f3f4f6; border-radius: 8px; }
+.blog-post h4 { font-size: 1.25rem; margin-bottom: 8px; }
+.blog-sidebar { flex: 1; }
+.blog-widget { padding: 24px; background-color: #0f172a; color: white; border-radius: 8px; text-align: center; }
+.blog-widget h3 { margin-bottom: 10px; }
+.blog-sub-btn { margin-top: 15px; padding: 10px 20px; background-color: #3b82f6; color: white; border: none; border-radius: 4px; width: 100%; cursor: pointer;}
+
+/* --- Layout 5: SaaS Landing Page --- */
+.saas-theme {
+  background-color: #f8fafc;
+}
+.saas-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: white;
+  border-bottom: 1px solid #e2e8f0;
+}
+.saas-nav span { font-size: 1.5rem; font-weight: 700; color: #3b82f6; }
+.saas-nav-btn { padding: 8px 16px; background: transparent; border: 2px solid #3b82f6; color: #3b82f6; border-radius: 20px; font-weight: 600; cursor: pointer;}
+.saas-hero {
+  display: flex;
+  padding: 80px 40px;
+  background-color: #1e293b;
+  color: white;
+  align-items: center;
+  gap: 40px;
+}
+.saas-hero-text { flex: 1; display: flex; flex-direction: column; gap: 20px; align-items: flex-start; }
+.saas-hero-text h1 { font-size: 2.5rem; line-height: 1.2; }
+.saas-hero-btn { padding: 14px 28px; background-color: #3b82f6; color: white; border: none; border-radius: 8px; font-weight: 700; font-size: 1.1rem; cursor: pointer; }
+.saas-hero-placeholder { flex: 1; height: 300px; background-color: #334155; border-radius: 12px; }
+.saas-pricing {
+  padding: 60px 40px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  background-color: white;
+  flex-grow: 1;
+}
+.pricing-card {
+  padding: 40px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background-color: white;
+  text-align: center;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.pricing-card.premium {
+  border: 2px solid #3b82f6;
+  background-color: #f0fdf4;
+}
+.pricing-card .price { font-size: 2rem; font-weight: 700; color: #0f172a; }
+.plan-btn { padding: 12px; background-color: #0f172a; color: white; border: none; border-radius: 8px; font-weight: 600; cursor: pointer; margin-top: auto; }
+

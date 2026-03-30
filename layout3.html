@@ -1,12 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Layout 3 - ColourArea</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Commerce Shop - ColourArea</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <h1>Layout 3: E-Commerce Shop (Placeholder)</h1>
-    <a href="index.html">Back to Home</a>
+<body class="layout-page">
+
+  <aside class="sidebar-tools">
+    <div class="tools-header">
+      <a href="index.html" class="back-link">&larr; Back to Home</a>
+      <h2>Colour Tools</h2>
+    </div>
+    
+    <div class="tool-group">
+      <label for="colorPicker">Selected Element Color:</label>
+      <div class="picker-row">
+        <input type="color" id="colorPicker" value="#ffffff" disabled>
+        <span id="selectedElementName" class="selected-text">None selected</span>
+      </div>
+      <small class="instruction">Click any section on the right to select it.</small>
+    </div>
+
+    <div class="tool-actions">
+      <button id="resetColorsBtn" class="btn btn-outline" disabled>Reset Colors</button>
+      <button id="copyColorsBtn" class="btn btn-primary" disabled>Copy HEX</button>
+    </div>
+  </aside>
+
+  <main class="layout-canvas">
+    
+    <div class="mock-website shop-theme">
+      
+      <header class="shop-header colourable" data-element-name="Shop Header">
+        <div class="shop-logo colourable" data-element-name="Shop Logo">ShopifyFake</div>
+        <div class="shop-cart colourable" data-element-name="Cart Button">Cart (0)</div>
+      </header>
+
+      <div class="shop-promo colourable" data-element-name="Promo Banner">
+        <h2>Summer Sale is Here</h2>
+        <p>Up to 50% off select items.</p>
+      </div>
+
+      <section class="shop-grid colourable" data-element-name="Product Grid Area">
+        <div class="shop-item colourable" data-element-name="Product Item 1">
+          <div class="shop-img"></div>
+          <div class="shop-info">
+            <span class="shop-price">$29.99</span>
+            <button class="shop-btn colourable" data-element-name="Buy Button 1">Add to Cart</button>
+          </div>
+        </div>
+        <div class="shop-item colourable" data-element-name="Product Item 2">
+          <div class="shop-img"></div>
+          <div class="shop-info">
+            <span class="shop-price">$45.00</span>
+            <button class="shop-btn colourable" data-element-name="Buy Button 2">Add to Cart</button>
+          </div>
+        </div>
+        <div class="shop-item colourable" data-element-name="Product Item 3">
+          <div class="shop-img"></div>
+          <div class="shop-info">
+            <span class="shop-price">$12.50</span>
+            <button class="shop-btn colourable" data-element-name="Buy Button 3">Add to Cart</button>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>

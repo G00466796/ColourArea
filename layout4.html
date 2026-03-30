@@ -1,12 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Layout 4 - ColourArea</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Blog - ColourArea</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <h1>Layout 4: Modern Blog (Placeholder)</h1>
-    <a href="index.html">Back to Home</a>
+<body class="layout-page">
+
+  <aside class="sidebar-tools">
+    <div class="tools-header">
+      <a href="index.html" class="back-link">&larr; Back to Home</a>
+      <h2>Colour Tools</h2>
+    </div>
+    
+    <div class="tool-group">
+      <label for="colorPicker">Selected Element Color:</label>
+      <div class="picker-row">
+        <input type="color" id="colorPicker" value="#ffffff" disabled>
+        <span id="selectedElementName" class="selected-text">None selected</span>
+      </div>
+      <small class="instruction">Click any section on the right to select it.</small>
+    </div>
+
+    <div class="tool-actions">
+      <button id="resetColorsBtn" class="btn btn-outline" disabled>Reset Colors</button>
+      <button id="copyColorsBtn" class="btn btn-primary" disabled>Copy HEX</button>
+    </div>
+  </aside>
+
+  <main class="layout-canvas">
+    <div class="mock-website blog-theme">
+      
+      <nav class="blog-nav colourable" data-element-name="Blog Navigation">
+        <span class="blog-title">The Daily Read</span>
+      </nav>
+
+      <article class="blog-featured colourable" data-element-name="Featured Post Area">
+        <div class="blog-img-large"></div>
+        <h2 class="blog-headline colourable" data-element-name="Featured Headline">10 Tips for Modern Web Design</h2>
+        <p>A deep dive into structure, aesthetic, and color theory for developers...</p>
+      </article>
+
+      <div class="blog-layout">
+        <section class="blog-feed colourable" data-element-name="Blog Feed Area">
+          <div class="blog-post colourable" data-element-name="Post 1">
+            <h4>Understanding CSS Grid</h4>
+            <p>How to align items without losing your mind.</p>
+          </div>
+          <div class="blog-post colourable" data-element-name="Post 2">
+            <h4>JavaScript Variables</h4>
+            <p>Let, const, and why var is mostly retired.</p>
+          </div>
+        </section>
+
+        <aside class="blog-sidebar colourable" data-element-name="Blog Sidebar">
+          <div class="blog-widget colourable" data-element-name="Sidebar Widget">
+            <h3>Subscribe</h3>
+            <p>Get the latest posts in your inbox.</p>
+            <button class="blog-sub-btn colourable" data-element-name="Subscribe Button">Join Now</button>
+          </div>
+        </aside>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
