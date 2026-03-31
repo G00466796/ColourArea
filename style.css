@@ -2,11 +2,11 @@
 :root {
   --primary-color: #6366f1;
   --primary-hover: #4f46e5;
-  --text-main: #1f2937;
-  --text-muted: #4b5563;
-  --bg-color: #f9fafb;
-  --card-bg: #ffffff;
-  --border-color: #e5e7eb;
+  --text-main: #f3f4f6;
+  --text-muted: #9ca3af;
+  --bg-color: #121212;
+  --card-bg: #1e1e1e;
+  --border-color: #333333;
 }
 
 * {
@@ -42,8 +42,8 @@ a {
 .hero {
   background: linear-gradient(135deg, #1e1b4b, #4338ca);
   background-image:
-    linear-gradient(rgba(30, 27, 75, 0.8), rgba(67, 56, 202, 0.8)),
-    url('https://images.unsplash.com/photo-1557683316-973673baf926?q=80&w=2000&auto=format&fit=crop');
+    linear-gradient(rgba(18, 18, 18, 0.3), rgba(18, 18, 18, 0.5)),
+    url('hero-background.jpg');
   background-size: cover;
   background-position: center;
   color: white;
@@ -78,14 +78,14 @@ a {
 }
 
 .btn-primary {
-  background-color: white;
-  color: var(--primary-color);
+  background-color: var(--primary-color);
+  color: white;
 }
 
 .btn-primary:hover {
-  background-color: #f3f4f6;
+  background-color: var(--primary-hover);
   transform: translateY(-2px);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 .btn-outline {
@@ -183,7 +183,7 @@ a {
 .site-footer {
   text-align: center;
   padding: 30px 20px;
-  background-color: white;
+  background-color: var(--card-bg);
   border-top: 1px solid var(--border-color);
   color: var(--text-muted);
   font-size: 0.9rem;
@@ -197,7 +197,7 @@ a {
 
 .sidebar-tools {
   width: 300px;
-  background-color: white;
+  background-color: var(--card-bg);
   border-right: 1px solid var(--border-color);
   padding: 24px;
   display: flex;
@@ -261,7 +261,7 @@ input[type="color"] {
 
 .layout-canvas {
   flex-grow: 1;
-  background-color: #f3f4f6;
+  background-color: var(--bg-color);
   overflow-y: auto;
   padding: 40px;
   display: flex;
@@ -270,6 +270,7 @@ input[type="color"] {
 
 .mock-website {
   background-color: white;
+  color: #1f2937; /* Reset text color for white background */
   width: 100%;
   max-width: 900px;
   border-radius: 8px;
@@ -278,6 +279,15 @@ input[type="color"] {
   min-height: 800px;
   display: flex;
   flex-direction: column;
+}
+
+.mock-website h1,
+.mock-website h2,
+.mock-website h3,
+.mock-website h4,
+.mock-website h5,
+.mock-website h6 {
+  color: #111827; /* Reset heading colors */
 }
 
 .colourable {
